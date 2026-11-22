@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Kegiatan Kampus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HEADER DAN NAVIGASI -->
+    <header>
+      <h1>Judul Kegiatan Kampus</h1>
+
+      <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#rundown">Rundown</a>
+        <a href="#daftar">Daftar</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <!-- BAGIAN TENTANG KEGIATAN -->
+      <section id="tentang" class="tentang">
+
+        <img src="images/kegiatan.jpg"
+             alt="Foto kegiatan kampus">
+
+        <div class="deskripsi">
+          <h2>Tentang Kegiatan</h2>
+
+          <p>
+            Kegiatan kampus merupakan kegiatan yang bertujuan
+            untuk meningkatkan <strong>kreativitas</strong>
+            dan <em>kemampuan mahasiswa</em>.
+          </p>
+
+          <a href="https://www.google.com"
+             target="_blank"
+             rel="noreferrer">
+             Tautan Panduan Kegiatan
+          </a>
+        </div>
+
+      </section>
+
+      <!-- BAGIAN RUNDOWN -->
+      <section id="rundown" class="rundown">
+
+        <div class="kotak">
+          <h2>Syarat Peserta</h2>
+
+          <ul>
+            <li>Poin syarat 1</li>
+            <li>Poin syarat 2</li>
+          </ul>
+        </div>
+
+        <div class="kotak">
+          <h2>Alur Pendaftaran</h2>
+
+          <ol>
+            <li>Isi data</li>
+            <li>Verifikasi</li>
+            <li>Kirim</li>
+          </ol>
+        </div>
+
+      </section>
+
+      <!-- BAGIAN FORMULIR PENDAFTARAN -->
+      <section id="daftar">
+
+        <h2>Formulir Pendaftaran</h2>
+
+        <form action="#" method="post">
+
+          <div class="form-row">
+
+            <div class="form-group">
+              <label for="nama">Nama</label>
+              <input type="text"
+                     id="nama"
+                     name="nama"
+                     placeholder="Nama"
+                     required>
+            </div>
+
+            <div class="form-group">
+              <label for="surel">Surel</label>
+              <input type="email"
+                     id="surel"
+                     name="surel"
+                     placeholder="Surel"
+                     required>
+            </div>
+
+            <div class="form-group">
+              <label for="tanggal">Tanggal Lahir</label>
+              <input type="date"
+                     id="tanggal"
+                     name="tanggal"
+                     required>
+            </div>
+
+            <div class="form-group">
+              <label for="divisi">Divisi</label>
+              <select id="divisi" name="divisi" required>
+                <option value="">Pilih Divisi</option>
+                <option value="acara">Acara</option>
+                <option value="humas">Humas</option>
+                <option value="perlengkapan">Perlengkapan</option>
+                <option value="dokumentasi">Dokumentasi</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="form-footer">
+
+            <label class="persetujuan">
+              <input type="checkbox"
+                     id="setuju"
+                     name="setuju"
+                     required>
+              Persetujuan
+            </label>
+
+            <button type="submit">
+              Kirim Pendaftaran
+            </button>
+
+          </div>
+
+        </form>
+
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>
+        © 2026 Pemrograman Web · Informasi Panitia Kegiatan
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+/* PENGATURAN DASAR */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f5f9;
+  color: #263445;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #14558a;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ffd166;
+}
+
+/* SEMUA SECTION */
+section {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 10px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #14558a;
+  margin-bottom: 10px;
+}
+
+/* TENTANG KEGIATAN */
+.tentang {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tentang img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.deskripsi {
+  flex: 1;
+  min-width: 200px;
+}
+
+.deskripsi p {
+  margin-bottom: 10px;
+}
+
+.deskripsi a {
+  color: #14558a;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.deskripsi a:hover {
+  text-decoration: underline;
+}
+
+/* RUNDOWN */
+.rundown {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.kotak {
+  flex: 1;
+  min-width: 250px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #dbe3eb;
+  border-radius: 8px;
+}
+
+ul,
+ol {
+  padding-left: 22px;
+}
+
+/* FORMULIR */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #75aee0;
+  border-color: #14558a;
+}
+
+/* PERSETUJUAN DAN TOMBOL */
+.form-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.persetujuan {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.persetujuan input {
+  width: auto;
+}
+
+button {
+  background-color: #14558a;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0d3d65;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 20px;
+  padding: 15px;
+  text-align: center;
+  background-color: #e8eef5;
+  border-radius: 8px;
+  color: #526273;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tentang {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tentang img {
+    width: 100%;
+    height: auto;
+  }
+
+  .rundown {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .form-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
